@@ -1,0 +1,268 @@
+/*header*/
+header {
+    display: flex; /* Utilise le flexbox pour aligner les éléments horizontalement */
+    justify-content: space-between; /* Espace entre le logo et la barre de recherche */
+    align-items: center; /* Centre verticalement les éléments */
+    width: 100%; /* Prend toute la largeur de la page */
+    padding-bottom:20px; 
+}
+#recherche_conteneur{
+    width: 25%;
+}
+
+/* navbar */
+nav {
+    font-size: 1em;
+    border-top: 2px solid rgb(226, 226, 226); /* Bordure supérieure pour séparer la navbar du header */
+    border-bottom: 2px solid rgb(133, 133, 255); /* Bordure inférieure pour séparer les éléments */
+}
+
+.menu {
+    display: flex;
+    list-style-type: none;
+    padding: 0; /* Enlève le padding par défaut */
+    margin: 0; /* Enlève la marge par défaut */
+}
+
+.menu li {
+    position: relative;
+    flex: 1; /* Chaque élément du menu prendra une largeur égale */
+}
+
+.menu a {
+    text-decoration: none;
+    padding: 10px 20px;
+    display: block;
+    background-color: aliceblue; /* Couleur de fond des éléments du menu */
+    color: blue;
+    border-right: 0.5px solid rgb(226, 226, 226);
+    border-left: 0.5px solid rgb(226, 226, 226) /* Bord droit pour séparer les éléments */
+}
+
+.menu > li > a {
+    display: flex;
+    justify-content: center; /* Centre le texte dans les éléments */
+    text-align: center;
+}
+
+.menu > li:hover > a {
+    background-color: rgb(238, 251, 255); /* Couleur de fond lors du survol */
+    text-decoration: underline; 
+}
+
+.menu > li:hover > ul {
+    display: block; /* Affiche le sous-menu lors du survol */
+}
+
+.menu > li > ul {
+    display: none; /* Masque le sous-menu par défaut */
+    position: absolute;
+    list-style: none;
+    background-color: rgb(238, 251, 255); /* Couleur de fond pour le sous-menu */
+    padding: 0;
+    width: 100%; /* Assure que le sous-menu prenne la même largeur que son parent */
+}
+
+.menu ul li {
+    width: 100%; /* S'assure que chaque élément du sous-menu prenne toute la largeur */
+}
+
+.menu ul li a {
+    background-color: rgb(238, 251, 255); /* Couleur de fond pour les éléments du sous-menu */
+    border-right: none; /* Enlève la bordure droite pour le sous-menu */
+    border-bottom: none;
+}
+
+.menu ul li:hover > a {
+    background-color: rgb(133, 133, 255); /* Couleur de fond pour le survol des sous-menu */
+}
+
+/*fil d'ariane*/
+.breadcrumbs {
+    list-style-type: none; /* Enlève les puces par défaut */
+    padding: 10px 0; /* Espace au-dessus et en-dessous */
+    margin: 0; /* Enlève la marge par défaut */
+    font-size: 14px; /* Taille de la police */
+    color: rgb(0, 0, 151);
+}
+
+.breadcrumbs li {
+    display: inline; /* Affiche les éléments en ligne */
+}
+
+.breadcrumbs li a {
+    text-decoration: none; /* Enlève le soulignement des liens */
+    color:rgb(0, 0, 151);
+}
+/*main*/
+#contenu h1 {
+	background: #0b4b76;
+    color: white;
+    font-weight: bold;
+	text-transform: uppercase;
+	padding-top: 5px;
+	padding-bottom: 5px;
+    margin-right: -11px;
+    margin-left: -11px;
+	font-size: 1.2em;
+	border-radius: 10px 10px 0px 0px;
+    padding-left: 0.2em;
+}
+#intro{
+	font-weight:bold;
+	font-size: small;
+	color:#0b4b76;
+	padding-top: 3px;
+	padding-bottom: 6px;
+}
+.carte {
+	background: aliceblue;
+	box-shadow: 0px 3px 0px rgb(226, 226, 226);
+    padding-top: 0.4em;
+}
+#contenu .carte:first-child{
+    border-radius: 0px 0px 0px 10px;
+}
+#contenu .carte:last-child{
+    border-radius: 0px 0px 10px 0px;;
+}
+.carte li{
+    list-style-type: none;
+    margin-left:-2.4em;
+    margin-top: 0.8em;
+    font-size: small;
+}
+main a{
+text-decoration: none;
+color:#0E5F96;
+font-weight: bold;
+}
+
+/*aside*/
+#contenu h3 {
+	padding-top: 0.6em;
+	padding-bottom: 0.4em;
+    padding-left: 0.2em;
+    border-radius: 10px 10px 0px 0px;
+	font-size: 1em;
+	color: white;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+#contenu .aside2 h3{
+	background: #9C2F03;
+}
+#contenu .aside1 h3{
+	background: #0b4b76;
+}
+.myaside{
+    background-color:aliceblue;
+    margin-bottom:0.8em;
+    border-radius: 10px;
+    padding-bottom: 0.5em;
+    margin-left:-7px;
+    margin-right: -12px;
+    box-shadow: 0px 3px 0px rgb(226, 226, 226);
+    color:#0b4b76;
+    text-align: left;
+}
+.myaside li{
+    list-style-type: none;
+}
+.myaside a {
+	text-decoration:none;
+    color:#0b4b76;
+    font-size: small;
+    margin-right:4em;
+}
+.myaside a:hover {
+	text-decoration:underline;
+}
+.myaside a .date{
+    color:#9C2F03;
+    font-weight: bold;
+}
+.liendroite{
+    font-weight: bold;
+    text-align: end;
+}
+/*footer*/
+#bas_page {
+	background-color:#199bdb;
+	color:#FFF;
+    margin-left: -1em;
+    margin-right: -1em;
+    font-size: small;
+    padding:1em;
+}
+#bas_page ul p {
+	margin-bottom: 1em;
+}
+#bas_page ul{
+    display: flex; 
+}
+#bas_page a {
+	color:#FFF;
+    text-decoration: none;
+}
+#bas_page a:hover {
+    text-decoration: underline; /* Ajoute le soulignement lors du survol */
+    color: #ffffff; 
+}
+#bas_page ul li {
+	list-style-type: none;
+    text-align: center;
+}
+#bas_page>ul>li>p {
+	font-weight:bold;
+}
+
+#bas_page ul ul li {
+	list-style: disc outside none;
+	color:#43BFFE;
+    text-align: left;
+}
+#bas_page ul li ul {
+    display: block; /* Assure que les sous-listes s'affichent verticalement */
+    margin-top: 0.5em; /* Espacement entre le titre et la sous-liste */
+}
+    #fin_footer{
+        background:#042353;
+        clear: both;
+        font-size: 0.7em;
+        text-align: center;
+        letter-spacing: 1px;
+        border-radius: 0px 0px 8px 8px ;
+        padding: 1em 0;
+        margin-left: -1.1em;
+        margin-right: -1.1em;
+    }
+    #fin_footer a {
+        color: #C7D6E3;
+        font-weight: bold;
+    }
+
+/*media query mobile*/
+
+@media (max-width: 767.98px) {
+        
+    main .row > div {
+        width: 100%; /* Prend toute la largeur sur mobile */
+        margin-bottom: 15px; /* Ajoute un espacement entre les éléments */
+    }
+}
+@media (max-width: 767.98px) {
+    /* Styles pour le menu sur mobile */
+    nav .menu {
+        display: block; /* Change l'affichage pour qu'il soit vertical */
+    }
+
+    nav .menu li {
+        width: 100%; /* Chaque élément prend toute la largeur */
+    }
+
+    nav .menu li:hover > ul {
+        display: block; /* Affiche le sous-menu au survol */
+        position: relative; /* Assure que le sous-menu est bien positionné par rapport à son parent */
+    }
+}
