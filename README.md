@@ -1,45 +1,61 @@
 ## Adresse de la page 
-
-## Description du projet
-Ce devoir consistait à créer une structure de mise en page en utilisant HTML et CSS, en respectant les principes de flexibilité, de réactivité, et de conception visuelle harmonieuse. Le fichier CSS que j'ai créé contient les styles pour les différents éléments de la page, notamment le header, la navbar, le fil d'ariane, le main, les éléments aside, et le footer. De plus, j'ai mis en place des media queries pour assurer la réactivité de la page sur les écrans de différentes tailles.
-
-## Contenu du fichier CSS
+https://luceg02.github.io/devmaisoncssgiovannetti/
 
 ### Header
-Le header utilise le Flexbox pour organiser l'espace entre le logo et la barre de recherche. Cette section est centrée verticalement et s'étend sur toute la largeur de la page. 
+#### HTML
+Le `header` est structuré en deux parties : un logo et une barre de recherche. Le logo est placé à l'aide de Bootstrap dans un `div` de classe `col-5 myLogo`, contenant une image. La barre de recherche se localise dans une `div` de classe `col-3`.
 
-### Barre de navigation (Navbar)
-- La navigation est conçue comme une liste non ordonnée avec Flexbox, permettant aux éléments de prendre une largeur égale.
-- Les éléments de menu ont une couleur de fond, une bordure pour la séparation, et changent de couleur au survol pour un effet visuel.
-- Un sous-menu est également intégré, qui apparaît au survol de chaque élément.
+#### CSS
+Le header utilise Flexbox ('display: flex'), avec 'justify-content: space-between`'pour créer un espacement optimal. Les éléments sont centrés verticalement grâce à 'align-items: center'.
+Le formulaire de recherche utilise également Flexbox.
 
-### Fil d'ariane (Breadcrumbs)
-Les breadcrumbs sont un autre élément clé pour la navigation. Ils sont affichés en ligne et stylisés avec une couleur spécifique, facilitant l'identification rapide du chemin parcouru par l'utilisateur.
+### Navbar
+#### CSS
+Le menu utilise Flexbox (`display: flex`), ce qui permet aux éléments d'avoir une largeur égale (`flex: 1`), tout en éliminant les marges et le padding par défaut.
+Les liens de menu (`<a>`) sont stylisés sans soulignement et avec des espaces internes. Ils sont dotés d'une couleur de fond `aliceblue` et d'une bordure.
+Lors du survol, la couleur de fond change. Les sous-menus sont masqués par défaut et s'affichent lorsqu'un utilisateur survole leur parent.
 
-### Contenu principal (Main)
-Les styles du contenu principal sont organisés pour afficher un contenu structuré, avec des éléments comme un en-tête, des cartes, et des liens cliquables. La mise en page des cartes est encadrée par une bordure et une ombre pour leur donner du relief.
+### Fil d'Ariane
+#### HTML
+Le fil d'Ariane est structuré au sein d'une `div` avec la classe `row`.
 
-### Section Aside
-Les éléments aside sont utilisés pour afficher des informations supplémentaires. Chaque bloc aside possède son propre en-tête stylisé et un fond coloré distinct pour les différencier. 
+#### CSS
+La classe '.breadcrumbs' élimine les puces par défaut ('list-style-type: none').
+La police est définie à une taille de 14 pixels, avec une couleur bleue.
+Chaque élément de la liste est affiché en ligne grâce à `display: inline`.
+Les liens (`.breadcrumbs li a`) sont stylisés sans soulignement.
+
+### Main
+#### HTML
+Le conteneur principal est une `<section class="row">` qui utilise Bootstrap pour diviser l'espace en colonnes. 
+Le main occupe 9 colonnes.
+Trois cards sont ensuite présentées dans des `<div class="col-4 carte">`.
+#### CSS
+L’en-tête (`#entete`) a une couleur bleue et le texte est blanc pour le titre (`#contenu h1`).
+Les cartes sont stylisées avec un fond clair (aliceblue) et des ombres.
+Les bords des cartes sont arrondis et le premier et le dernier enfant de `.carte` bénéficient d'un style spécifique pour les coins.
+Les listes à l'intérieur des cartes n'ont pas de puces, et chaque élément de liste est espacé.
+
+### Aside
+#### HTML
+La section `<aside>` occupe trois colonnes, et est divisee en deux parties:
+La première partie est un `<div class="myaside aside1">`,.
+La seconde partie est un `<div class="myaside aside2">`.
+#### CSS
+Les titres de section ont un style gras et en majuscules.
+Les liens dans les listes n'ont pas de soulignement par défaut, mais ils deviennent soulignés au survol.
+Les marges et le padding ont ete ajoustees.
 
 ### Footer
-Le footer est divisé en plusieurs sections et est entièrement stylisé pour assurer une cohérence visuelle avec le reste de la page. J'ai aussi ajouté un fin_footer, qui termine la page avec un fond plus sombre et des liens légers, en bas de page.
+#### HTML
+Le footer contient un `<div class="row">.
+#### CSS
+Le fond de `#bas_page` est d'un bleu vif (`#199bdb`), les éléments de la liste sont disposés en utilisant Flexbox (`display: flex;`), permettant une répartition des catégories avec un espacement entre elles (`gap: 1.5em`).
+Les sous-listes ont des puces de type `disc`.
+Le `#fin_footer` a un fond plus sombre (`#042353`), et il est centré avec un texte en petite taille.
 
-### Media Queries (Mobile)
-Pour adapter le site aux mobiles :
-- Le layout du menu change en affichage vertical sur les petits écrans.
-- Les éléments prennent toute la largeur et sont espacés pour une meilleure lecture sur les écrans mobiles.
-- D'autres ajustements de taille et de position ont été faits pour améliorer la lisibilité et l'ergonomie sur les petits écrans.
+### Media Query pour responsive appareils mobiles
+Cette media query cible les écrans ayant une largeur maximale de 767,98 pixels, ce qui est typique pour les smartphones. Tous les div enfants directs de `.row` à l'intérieur de la balise `<main>` sont configurés pour occuper 100 % de la largeur de leur conteneur. Cela permet d’assurer que les éléments s'affichent en pleine largeur sur les petits écrans. De plus, un espacement de 15 pixels est ajouté en bas de chaque élément pour créer une séparation visuelle.
 
-## Choix de conception
-- **Flexbox** a été choisi pour aligner les éléments de manière simple et flexible.
-- **Couleurs** : Une palette de couleurs harmonieuse a été utilisée, avec des nuances de bleu et des teintes neutres, créant une atmosphère professionnelle et conviviale.
-- **Responsivité** : Le fichier CSS inclut des media queries pour assurer la réactivité, garantissant une bonne expérience utilisateur sur les appareils mobiles.
-- **Typographie** : Les textes sont stylisés pour être lisibles, avec différentes tailles de police pour les titres et les paragraphes.
-
-## Conclusion
-Ce devoir m'a permis de mettre en pratique les concepts de mise en page avec Flexbox, ainsi que la conception d'une navigation claire et d'une structure de page responsive. Le fichier CSS montre une utilisation réfléchie des styles et des principes d'accessibilité pour créer une expérience utilisateur agréable.
-
---- 
-
-Ce fichier README justifie et explique les différentes décisions de conception et d'implémentation que tu as prises dans ton devoir, tout en détaillant les styles appliqués dans ton fichier CSS.Adresse de la page: https://luceg02.github.io/devmaisoncssgiovannetti/
+### Media Query pour menu responsive appareils mobiles
+Cette deuxième media query, cible les mêmes conditions que la premiere, est utilisée pour modifier l'affichage du menu de navigation sur les écrans mobiles. Le menu devient vertical (`display: block`). Chaque élément du menu (`li`) est également configuré pour occuper 100 % de la largeur.
