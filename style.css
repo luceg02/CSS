@@ -1,25 +1,25 @@
 /*header*/
 header {
-    display: flex; /* Utilise le flexbox pour aligner les éléments horizontalement */
-    justify-content: space-between; /* Espace entre le logo et la barre de recherche */
-    align-items: center; /* Centre verticalement les éléments */
-    width: 100%; /* Prend toute la largeur de la page */
-    padding-bottom:20px; 
+display: flex; 
+justify-content: space-between; 
+align-items: center;
+width: 100%; 
+padding-bottom:20px; 
 }
 #recherche_conteneur form {
-    display: flex;
-    align-items: center;
-	margin-left: 0.3em;
-	margin-right: -2em;
-	padding-right: -2em;
+display: flex;
+align-items: center;
+margin-left: 0.3em;
+margin-right: -2em;
+padding-right: -2em;
 }
 #rechercheInput{
-	width: 100%;
-	margin-right: 0.5em;
+width: 100%;
+margin-right: 0.5em;
 }
 .row .myLogo{
-	padding-left: 0;
-	margin-left: 0;
+padding-left: 0;
+margin-left: 0;
 }
 
 /* navbar */
@@ -35,83 +35,82 @@ nav {
 .menu {
     display: flex;
     list-style-type: none;
-    padding: 0; /* Enlève le padding par défaut */
-    margin: 0; /* Enlève la marge par défaut */
+    padding: 0; 
+    margin: 0; 
 }
 
 .menu li {
     position: relative;
-    flex: 1; /* Chaque élément du menu prendra une largeur égale */
-    padding: 0; /* Enlève le padding par défaut */
-    margin: 0; /* Enlève la marge par défaut */
+    flex: 1; 
+    padding: 0; 
+    margin: 0; 
 }
 
 .menu a {
     text-decoration: none;
     padding: 10px 20px;
     display: block;
-    background-color: aliceblue; /* Couleur de fond des éléments du menu */
+    background-color: aliceblue;
     color: blue;
     border-right: 0.5px solid rgb(226, 226, 226);
-    border-left: 0.5px solid rgb(226, 226, 226) /* Bord droit pour séparer les éléments */
-	;
-    border-top: 2px solid rgb(226, 226, 226); /* Bordure supérieure pour séparer la navbar du header */
-    border-bottom: 2px solid rgb(133, 133, 255); /* Bordure inférieure pour séparer les éléments */
+    border-left: 0.5px solid rgb(226, 226, 226) ;
+    border-top: 2px solid rgb(226, 226, 226); 
+    border-bottom: 2px solid rgb(133, 133, 255); 
 }
 
 .menu > li > a {
     display: flex;
-    justify-content: center; /* Centre le texte dans les éléments */
+    justify-content: center;
     text-align: center;
 }
 
 .menu > li:hover > a {
-    background-color: rgb(238, 251, 255); /* Couleur de fond lors du survol */
+    background-color: rgb(238, 251, 255); 
     text-decoration: underline; 
 }
 
 .menu > li:hover > ul {
-    display: block; /* Affiche le sous-menu lors du survol */
+    display: block;
 }
 
 .menu > li > ul {
-    display: none; /* Masque le sous-menu par défaut */
+    display: none; 
     position: absolute;
     list-style: none;
-    background-color: rgb(238, 251, 255); /* Couleur de fond pour le sous-menu */
+    background-color: rgb(238, 251, 255);
     padding: 0;
-    width: 100%; /* Assure que le sous-menu prenne la même largeur que son parent */
+    width: 100%; 
 }
 
 .menu ul li {
-    width: 100%; /* S'assure que chaque élément du sous-menu prenne toute la largeur */
+    width: 100%;
 }
 
 .menu ul li a {
-    background-color: rgb(238, 251, 255); /* Couleur de fond pour les éléments du sous-menu */
-    border-right: none; /* Enlève la bordure droite pour le sous-menu */
+    background-color: rgb(238, 251, 255); 
+    border-right: none; 
     border-bottom: none;
 }
 
 .menu ul li:hover > a {
-    background-color: rgb(133, 133, 255); /* Couleur de fond pour le survol des sous-menu */
+    background-color: rgb(133, 133, 255); 
 }
 
 /*fil d'ariane*/
 .breadcrumbs {
-    list-style-type: none; /* Enlève les puces par défaut */
-    padding: 10px 0; /* Espace au-dessus et en-dessous */
-    margin: 0; /* Enlève la marge par défaut */
-    font-size: 14px; /* Taille de la police */
+    list-style-type: none; 
+    padding: 10px 0; 
+    margin: 0; 
+    font-size: 14px;
     color: rgb(0, 0, 151);
 }
 
 .breadcrumbs li {
-    display: inline; /* Affiche les éléments en ligne */
+    display: inline;
 }
 
 .breadcrumbs li a {
-    text-decoration: none; /* Enlève le soulignement des liens */
+    text-decoration: none; 
     color:rgb(0, 0, 151);
 }
 .row .breadcrumbs{
@@ -120,10 +119,10 @@ nav {
 }
 /*main*/
 .row main ul {
-    padding-left: 0; /* Enlève le padding par défaut */
+    padding-left: 0;
 	padding-bottom: 0.5em;
 	padding-top: 0.5em;
-    margin: 0; /* Enlève la marge par défaut */
+    margin: 0; 
 }
 #entete {
 	background-color: #0b4b76;
@@ -169,20 +168,20 @@ color:#0E5F96;
 font-weight: bold;
 }
 .row aside{
-    padding-right: 0; /* Enlève le padding par défaut */
-	padding-left:0.5em;
+padding-right: 0; 
+padding-left:0.5em;
     
 }
 /*aside*/
 #contenu h3 {
-	padding-top: 0.6em;
-	padding-bottom: 0.4em;
-    padding-left: 0.2em;
-    border-radius: 10px 10px 0px 0px;
-	font-size: 1em;
-	color: white;
-	text-transform: uppercase;
-	font-weight: bold;
+padding-top: 0.6em;
+padding-bottom: 0.4em;
+padding-left: 0.2em;
+border-radius: 10px 10px 0px 0px;
+font-size: 1em;
+color: white;
+text-transform: uppercase;
+font-weight: bold;
 }
 #contenu .aside2 h3{
 	background: #9C2F03;
@@ -203,24 +202,24 @@ font-weight: bold;
     list-style-type: none;
 }
 .myaside a {
-	text-decoration:none;
-    color:#0b4b76;
-    font-size: small;
-    margin-right:4em;
-    text-align: left;
+text-decoration:none;
+color:#0b4b76;
+font-size: small;
+margin-right:4em;
+text-align: left;
 	
 }
 .myaside a:hover {
-	text-decoration:underline;
+text-decoration:underline;
 }
 .myaside a .date{
-    color:#9C2F03;
-    font-weight: bold;
+color:#9C2F03;
+font-weight: bold;
 }
 .liendroite{
-    font-weight: bold;
-	margin-right: -2em;
-    text-align: end;
+font-weight: bold;
+margin-right: -2em;
+text-align: end;
 }
 
 
@@ -232,7 +231,6 @@ font-weight: bold;
 	padding-right: 1em;
 }
 
-/* Couleur spécifique pour chaque lien de droite */
 .aside1 .liendroite a {
     color: #0b4b76; /* Bleu */
 }
@@ -243,65 +241,65 @@ font-weight: bold;
 
 /*footer*/
 #bas_page {
-	background-color:#199bdb;
-	color:#FFF;
-    font-size: small;
-    padding:1em;
+background-color:#199bdb;
+color:#FFF;
+font-size: small;
+padding:1em;
 }
 #bas_page ul p {
-	margin-bottom: 1em;
+margin-bottom: 1em;
 }
 #bas_page ul{
-    display: flex; 
-	flex-wrap: wrap; /* Pour gérer les éléments sur plusieurs lignes si nécessaire */
-    gap: 1.5em; /* Espace entre les colonnes */
+display: flex; 
+flex-wrap: wrap; 
+gap: 1.5em; 
 }
 #bas_page a {
-	color:#FFF;
-    text-decoration: none;
+color:#FFF;
+text-decoration: none;
 }
 #bas_page a:hover {
-    text-decoration: underline; /* Ajoute le soulignement lors du survol */
-    color: #ffffff; 
+text-decoration: underline; 
+color: #ffffff; 
 }
 #bas_page ul li {
-	list-style-type: none;
-    text-align: center;
-	text-align: left;
-    padding: 0; /* Supprime tout padding supplémentaire */
+list-style-type: none;
+text-align: center;
+text-align: left;
+padding: 0;
 }
 #bas_page ul li p {
-	font-weight:bold;
-	margin: 0; /* Supprime la marge par défaut */
-    margin-bottom: 0.5em; /* Ajoute une petite marge en bas */
-    text-align: left;
+font-weight:bold;
+margin: 0;
+margin-bottom: 0.5em;
+text-align: left;
 	
 }
 
 #bas_page ul ul li {
-	list-style: disc outside none;
-	color:#43BFFE;
-    text-align: left;    
-	margin-left: 1em; /* Indente les sous-éléments */
+list-style: disc outside none;
+color:#43BFFE;
+text-align: left;    
+margin-left: 1em;
 }
 #bas_page ul li ul {
-    display: block; /* Assure que les sous-listes s'affichent verticalement */
-    margin-top: 0.5em; /* Espacement entre le titre et la sous-liste */
-	padding: 0;
-    margin: 0;
+display: block; 
+margin-top: 0.5em; 
+padding: 0;
+margin: 0;
 }
-    #fin_footer{
-        background:#042353;
-        clear: both;
-        font-size: 0.7em;
-        text-align: center;
-        letter-spacing: 1px;
-        border-radius: 0px 0px 8px 8px ;
-        padding: 1em 0;
+#fin_footer{
+background:#042353;
+clear: both;
+font-size: 0.7em;
+text-align: center;
+letter-spacing: 1px;
+border-radius: 0px 0px 8px 8px ;
+padding: 1em 0;
     }
-    #fin_footer a {
-        color: #C7D6E3;
-        font-weight: bold;
+#fin_footer a {
+color: #C7D6E3;
+font-weight: bold;
     }
 
 
@@ -311,22 +309,21 @@ font-weight: bold;
 @media (max-width: 767.98px) {
         
     main .row > div {
-        width: 100%; /* Prend toute la largeur sur mobile */
-        margin-bottom: 15px; /* Ajoute un espacement entre les éléments */
+        width: 100%; 
+        margin-bottom: 15px; 
     }
 }
 @media (max-width: 767.98px) {
-    /* Styles pour le menu sur mobile */
     nav .menu {
-        display: block; /* Change l'affichage pour qu'il soit vertical */
+        display: block;
     }
 
     nav .menu li {
-        width: 100%; /* Chaque élément prend toute la largeur */
+        width: 100%; 
     }
 
     nav .menu li:hover > ul {
-        display: block; /* Affiche le sous-menu au survol */
-        position: relative; /* Assure que le sous-menu est bien positionné par rapport à son parent */
+        display: block;
+        position: relative; 
     }
 }
