@@ -13,10 +13,10 @@
 <body>
 	<div class="container">
 		<header class="row">
-            <div class="col-5 myLogo">
+            <div class="myLogo">
                 <img src="https://lp-projet-web.ovh/css3/evaluations/20221006_devoir_maison/img/logo_msp_Part.png" width="365" height="73">
             </div>
-            <div role="search" id="recherche_conteneur" class="col-3">
+            <div role="search" id="recherche_conteneur">
 				<form action="https://mon.service-public.fr/portail/faces/jsp/liste_res_tout.jsp" method="get">
 					<input type="text" name="fullText" id="rechercheInput"value="Rechercher" title="Rechercher">
 					<input type="submit" value="ok" title="Lancer la recherche"   id="ok_recherche">
@@ -26,7 +26,7 @@
 
 	<nav class="row">
     <ul class="menu">
-        <li class="col-md-3">
+        <li>
             <a href="/jsp/en_savoir_plus_mon_tableau_de_bord.jsp">Mon tableau de bord</a>
             <ul>
                 <li><a href="jsp/mes_liaisons.jsp" >&gt; Mes liaisons de comptes</a></li>
@@ -34,14 +34,14 @@
                 <li><a href="jsp/mon_suivi.jsp" >&gt; Mon suivi</a></li>
             </ul> 
         </li>
-        <li class="col-md-3">
+        <li>
             <a href="/jsp/en_savoir_plus_mes_documents.jsp">Mes documents</a>
             <ul>
                 <li><a href="jsp/msp_documents.jsp">&gt; Mon porte-documents</a></li>
                 <li><a href="jsp/bloc_note.jsp" >&gt; Mon bloc-notes</a></li>
             </ul> 
         </li>  
-        <li class="col-md-3">
+        <li>
             <a href="/jsp/en_savoir_plus_mon_profils.jsp">Mon profil</a>
             <ul>
                 <li><a href="jsp/mon_etat_civil.jsp" >&gt; Mes coordonnées</a></li>
@@ -49,7 +49,7 @@
                 <li><a href="jsp/mes_options.jsp">&gt; Mes options</a></li>
             </ul> 
         </li>
-        <li class="col-md-3">
+        <li>
             <a href="/jsp/en_savoir_plus_catalogue_des_services.jsp">Catalogue des services</a>
             <ul>
                 <li><a href="jsp/les_demarches.jsp?menu=true" >&gt; Les démarches</a></li>
